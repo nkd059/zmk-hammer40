@@ -277,10 +277,10 @@
 
         Prodrafts {
             bindings = <
-&kp NUMBER_1  &kp Q         &kp W         &kp E   &kp R         &kp T           &kp BACKSPACE  &kp LG(EQUAL)      &kp LG(MINUS)      &kp W        &kp S          &kp L
-&kp NUMBER_2  &kp A         &kp S         &kp D   &kp F         &kp G           &kp LG(V)      &kt LG(C)          &kp LG(X)          &kp O        &kp U          &kp R
-&to 2         &kp Z         &kp X         &kp C   &kp V         &kp B   &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(L)    &kp G          &kp P
-&kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp F1  &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(TAB)  &kp LG(LS(Z))  &kp LG(RIGHT_SHIFT)
+&kp NUMBER_1  &kp Q         &kp W         &kp E      &kp R         &kp T              &kp BACKSPACE  &kp LG(EQUAL)      &kp LG(MINUS)      &kp W        &kp S          &kp L
+&kp NUMBER_2  &kp A         &kp S         &kp D      &kp F         &kp G              &kp LG(V)      &kt LG(C)          &kp LG(X)          &kp O        &kp U          &kp R
+&to 2         &kp Z         &kp X         &kp LG(X)  &kp LG(C)     &kp LG(B)  &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(L)    &kp G          &kp P
+&kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp F1     &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(TAB)  &kp LG(LS(Z))  &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
