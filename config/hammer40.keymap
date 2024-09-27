@@ -129,6 +129,104 @@
             bindings = <&kp FSLH &kp P &kp I &kp N &kp K &kp RET>;
             label = "CRAFT_PINK";
         };
+
+        Craft_brown: Craft_brown {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp B &kp R &kp O &kp W &kp N &kp RET>;
+            label = "CRAFT_BROWN";
+        };
+
+        Craft_Purple: Craft_Purple {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp P &kp U &kp R &kp P &kp L &kp E &kp RET>;
+            label = "CRAFT_PURPLE";
+        };
+
+        craft_olive: craft_olive {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp O &kp L &kp I &kp V &kp E &kp RET>;
+            label = "CRAFT_OLIVE";
+        };
+
+        craft_Default_color: craft_Default_color {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp D &kp E &kp F &kp A &kp U &kp L &kp T &kp SPACE &kp C &kp O &kp L &kp O &kp R &kp RET>;
+            label = "CRAFT_DEFAULT_COLOR";
+        };
+
+        craft_grey: craft_grey {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp G &kp R &kp E &kp Y &kp RET>;
+            label = "CRAFT_GREY";
+        };
+
+        craft_light_grey: craft_light_grey {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp L &kp I &kp G &kp H &kp T &kp SPACE &kp G &kp R &kp E &kp Y &kp RET>;
+            label = "CRAFT_LIGHT_GREY";
+        };
+
+        craft_navy_blue: craft_navy_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp N &kp A &kp V &kp Y &kp SPACE &kp B &kp L &kp U &kp E &kp RET>;
+            label = "CRAFT_NAVY_BLUE";
+        };
+
+        craft_ocean_blue: craft_ocean_blue {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp O &kp C &kp E &kp A &kp N &kp SPACE &kp B &kp L &kp U &kp E &kp RET>;
+            label = "CRAFT_OCEAN_BLUE";
+        };
+
+        craft_green: craft_green {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp G &kp R &kp E &kp E &kp N &kp RET>;
+            label = "CRAFT_GREEN";
+        };
+
+        craft_table: craft_table {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp T &kp A &kp B &kp L &kp E>;
+            label = "CRAFT_TABLE";
+        };
+
+        craft_clear_style: craft_clear_style {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp C &kp L &kp E &kp A &kp R &kp SPACE &kp S &kp T &kp Y &kp L &kp I &kp N &kp G &kp RET>;
+            label = "CRAFT_CLEAR_STYLE";
+        };
+
+        Craft_page_break: Craft_page_break {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp P &kp A &kp G &kp E &kp SPACE &kp B &kp R &kp E &kp A &kp K>;
+            label = "CRAFT_PAGE_BREAK";
+        };
+
+        Craft_move_to: Craft_move_to {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp M &kp O &kp V &kp E &kp SPACE &kp T &kp O &kp RET>;
+            label = "CRAFT_MOVE_TO";
+        };
+
+        craft_image: craft_image {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH &kp I &kp M &kp A &kp G &kp E>;
+            label = "CRAFT_IMAGE";
+        };
     };
 
     keymap {
@@ -201,24 +299,24 @@
 
         Crafts {
             bindings = <
-&kp NUMBER_1       &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp E      &kp LG(BACKSLASH)  &kp LC(PERIOD)               &kp BACKSPACE  &kp U                 &kp I           &kp O                      &kp P           &kp LEFT_BRACKET
-&kp NUMBER_2       &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp D      &kp LG(LS(G))      &kp LG(G)                    &kp H          &kt LG(LA(NUMBER_6))  &kp LG(LA(N9))  &kp LG(LA(N8))             &kp LG(LA(N7))  &kp LG(LA(UP_ARROW))
-&to 2              &kp LC(N5)        &kp LC(NUMBER_6)  &kp LG(X)  &kp LG(C)          &kp LG(V)       &trans       &kp N          &kp M                 &kp COMMA       &kp LS(TAB)                &kp TAB         &kp LA(LG(DOWN_ARROW))
-&kp LG(LS(MINUS))  &kp LG(I)         &kp LG(B)         &kp N5     &kp LG(W)          &mo 7           &kp LC(TAB)  &kp LG(TAB)    &kp LG(LA(C))         &kp LG(LS(B))   &Craft_insert_new_Drawing  &kp LG(LS(Z))   &kp LG(Z)
+&kp ESCAPE         &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp E      &kp LG(BACKSLASH)  &kp LC(PERIOD)               &kp BACKSPACE  &craft_image          &Craft_page_break  &kp O                      &kp LG(LS(BACKSLASH))  &kp LG(LS(APOS))
+&kp NUMBER_2       &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp D      &kp LG(LS(G))      &kp LG(G)                    &kp LG(LA(T))  &kt LG(LA(NUMBER_6))  &kp LG(LA(N9))     &kp LG(LA(N8))             &kp LG(LA(N7))         &kp LG(LA(UP_ARROW))
+&to 2              &kp LC(N5)        &kp LC(NUMBER_6)  &kp LG(X)  &kp LG(C)          &kp LG(V)       &trans       &kp LG(LS(L))  &kp LG(LS(P))         &craft_table       &kp LS(TAB)                &kp TAB                &kp LA(LG(DOWN_ARROW))
+&kp LG(LS(MINUS))  &kp LG(I)         &kp LG(B)         &kp N5     &kp LG(W)          &mo 7           &kp LC(TAB)  &kp LG(TAB)    &kp LG(LS(C))         &kp LG(LS(B))      &Craft_insert_new_Drawing  &kp LG(LS(Z))          &kp LG(Z)
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
         Crafts_2 {
             bindings = <
-&kp NUMBER_1  &Craft_Red    &Craft_Orange  &Craft_pink  &kp R         &kp T           &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
-&kp NUMBER_2  &kp A         &kp S          &kp D        &kp F         &kp G           &kp H   &kt J   &kp K      &kp L       &kp SEMICOLON  &kp RIGHT_BRACKET
-&to 2         &kp Z         &kp X          &kp C        &kp V         &kp B   &trans  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp APOS       &kp SLASH
-&kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_4   &kp N5       &kp NUMBER_6  &kp F1  &kp F2  &kp F3  &kp N7  &kp N8     &kp N9      &kp N0         &kp RIGHT_SHIFT
+&craft_Default_color  &Craft_Red    &Craft_Orange  &Craft_pink       &Craft_brown       &craft_grey                &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&craft_clear_style    &craft_green  &craft_olive   &craft_navy_blue  &craft_ocean_blue  &craft_light_grey          &kp H   &kt J   &kp K      &kp L       &kp SEMICOLON  &kp RIGHT_BRACKET
+&to 2                 &kp Z         &kp X          &kp C             &kp V              &kp B              &trans  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp APOS       &kp SLASH
+&kp NUMBER_3          &kp NUMBER_4  &kp NUMBER_4   &kp N5            &kp NUMBER_6       &kp F1             &kp F2  &kp F3  &kp N7  &kp N8     &kp N9      &kp N0         &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>;
         };
 
         layer_8 {
