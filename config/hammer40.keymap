@@ -278,7 +278,7 @@
         Prodrafts {
             bindings = <
 &kp ESCAPE    &kp D         &kp W         &kp E      &kp R         &kp PAGE_UP            &kp BACKSPACE  &kp LG(EQUAL)      &kp LG(MINUS)      &kp W        &kp S          &kp L
-&kp NUMBER_2  &kp E         &kp F         &kp D      &kp F         &kp PAGE_DOWN          &kp LG(V)      &kt LG(C)          &kp LG(X)          &kp O        &kp U          &kp R
+&kp NUMBER_2  &kp E         &kp H         &kp D      &kp F         &kp PAGE_DOWN          &kp LG(V)      &kt LG(C)          &kp LG(X)          &kp O        &kp U          &kp R
 &to 2         &kp Z         &kp X         &kp LG(X)  &kp LG(C)     &kp LG(V)      &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(L)    &kp G          &kp P
 &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp F1         &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(TAB)  &kp LG(LS(Z))  &kp LG(Z)
             >;
