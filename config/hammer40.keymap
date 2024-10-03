@@ -257,7 +257,7 @@
 
         layer_2 {
             bindings = <
-&to 0         &to 3         &to 4         &to 5         &to 6         &to 7               &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
+&to 0         &to 3         &to 4         &to 5         &to 6         &to 14              &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
 &trans        &to 3         &to 4         &to 0         &to 0         &to 0               &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
 &to 2         &trans        &trans        &kp N1        &kp N2        &kp N3      &trans  &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &lt 4 CAPS  &trans  &trans                &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_NXT     &trans
@@ -377,6 +377,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        Noteful {
+            bindings = <
+&kp LG(L)  &kp LG(W)  &trans  &trans  &kp LG(UP_ARROW)    &kp PAGE_UP                  &kp BACKSPACE    &kp LG(F)         &trans                &kp NUMBER_6      &kp NUMBER_5   &kp NUMBER_4
+&trans     &trans     &trans  &trans  &kp LG(DOWN_ARROW)  &kp PAGE_DOWN                &kp RIGHT_BRACE  &kp K_PLAY_PAUSE  &kp C_NEXT            &kp NUMBER_3      &kp NUMBER_2   &kp NUMBER_1
+&trans     &trans     &trans  &trans  &trans              &trans         &trans        &kp LEFT_BRACE   &trans            &kp E                 &kp A             &kp G          &kp F
+&trans     &trans     &trans  &trans  &trans              &kp TAB        &kp LEFT_GUI  &kp LC(TAB)      &trans            &kp LG(LA(NUMBER_0))  &kp LG(NUMBER_0)  &kp LG(LS(Z))  &kp LG(Z)
+            >;
+
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
     };
 };
