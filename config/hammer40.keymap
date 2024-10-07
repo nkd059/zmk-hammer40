@@ -236,9 +236,9 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp GRAVE     &kp Q         &kp W            &kp E     &kp R    &kp T                   &kp LG(LS(NUMBER_3))  &kp U          &kp C_MUTE        &kp O       &kp P              &rot_td
-&kp LEFT_GUI  &kp A         &kp S            &kp D     &kp F    &kp G                   &kp H                 &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LA(BACKSPACE)  &kp RIGHT_GUI
-&to 2         &kp Z         &kp X            &kp C     &kp V    &kp B        &rot_td    &kp N                 &kp M          &kp COMMA         &kp DOT     &kp FSLH           &kp BACKSLASH
+&kp GRAVE     &kp Q         &kp W            &kp E     &kp R    &kp T                   &kp LG(LS(NUMBER_3))  &kp U          &kp C_MUTE        &kp O       &kp C_MUTE         &kp C_PREVIOUS
+&kp LEFT_GUI  &kp A         &kp S            &kp D     &kp F    &kp G                   &kp H                 &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LA(BACKSPACE)  &kp C_PLAY_PAUSE
+&to 2         &kp Z         &kp X            &kp C     &kp V    &kp B        &rot_td    &kp N                 &kp M          &kp COMMA         &kp DOT     &kp FSLH           &kp C_NEXT
 &kp LCTRL     &kp LEFT_ALT  &kp PRINTSCREEN  &kp LGUI  &kp ESC  &lt 1 SPACE  &lt 3 TAB  &lt 2 ENTER           &kp BACKSPACE  &kp LEFT          &kp DOWN    &kp TAB            &kp LEFT_COMMAND
             >;
         };
