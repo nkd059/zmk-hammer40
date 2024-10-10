@@ -99,6 +99,160 @@
             tapping-term-ms = <250>;
             bindings = <&kp N5>, <&kp RS(N5)>, <&kp RA(N5)>;
         };
+
+
+         dt_6: dt_6 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_6";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N6>, <&kp RS(N6)>, <&kp RA(N6)>;
+        };
+
+         dt_7: dt_7 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_7";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N7>, <&kp RS(N7)>, <&kp RA(N7)>;
+        };
+
+         dt_8: dt_8 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_8";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N8>, <&kp RS(N8)>, <&kp RA(N8)>;
+        };
+
+         dt_9: dt_9 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_9";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N9>, <&kp RS(N9)>, <&kp RA(N9)>;
+        };
+
+         dt_Q: dt_Q {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_Q";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp Q>, <&kp RS(Q)>, <&kp RA(Q)>;
+        };
+
+         dt_W: dt_W {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_W";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp W>, <&kp RS(W)>, <&kp RA(W)>;
+        };
+
+         dt_E: dt_E {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_E";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp E>, <&kp RS(E)>, <&kp RA(E)>;
+        };
+
+         dt_R: dt_R {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_R";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp R>, <&kp RS(R)>, <&kp RA(R)>;
+        };
+
+        dt_T: dt_T {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_T";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp T>, <&kp RS(T)>, <&kp RA(T)>;
+        };
+
+         dt_A: dt_A {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_A";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp A>, <&kp RS(A)>, <&kp RA(A)>;
+        };
+
+         dt_S: dt_S {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_S";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp S>, <&kp RS(S)>, <&kp RA(S)>;
+        };
+
+         dt_D: dt_D {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_D";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp D>, <&kp RS(D)>, <&kp RA(D)>;
+        };
+
+        dt_F: dt_F {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_F";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp F>, <&kp RS(F)>, <&kp RA(F)>;
+        };
+
+         dt_G: dt_G {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_G";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp G>, <&kp RS(G)>, <&kp RA(G)>;
+        };
+
+         dt_Z: dt_Z {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_Z";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp Z>, <&kp RS(Z)>, <&kp RA(Z)>;
+        };
+
+         dt_X: dt_X {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_X";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp X>, <&kp RS(X)>, <&kp RA(X)>;
+        };
+
+        dt_C: dt_C {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_C";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp C>, <&kp RS(C)>, <&kp RA(C)>;
+        };
+
+         dt_V: dt_V {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_V";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp V>, <&kp RS(V)>, <&kp RA(V)>;
+        };
+
+         dt_B: dt_B {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_B";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp B>, <&kp RS(B)>, <&kp RA(B)>;
+        };
+
     };
 
     macros {
