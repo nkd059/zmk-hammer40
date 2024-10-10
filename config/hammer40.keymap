@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 
 /* Layers */
 
@@ -57,7 +58,7 @@
             label = "DT_1";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp N0>, <&kp RS(N0)>, <&kp RA(N0)>;
+            bindings = <&kp N1>, <&kp RS(NUMBER_1)>, <&kp RA(NUMBER_1)>;
         };
 
         dt_2: dt_2 {
@@ -425,10 +426,10 @@
 
         layer_2 {
             bindings = <
-&to 0         &to 3         &to 4         &to 5         &to 6         &to 14              &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
-&trans        &to 15        &to 4         &to 0         &to 0         &to 0               &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
-&to 2         &trans        &trans        &kp N1        &kp N2        &kp N3      &trans  &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &lt 4 CAPS  &trans  &trans                &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_NXT     &trans
+&to 0         &to 3         &to 4         &to 5         &to 6         &to 14                      &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
+&trans        &to 15        &to 4         &to 0         &to 0         &to 0                       &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
+&to 2         &trans        &trans        &kp N1        &kp N2        &kp N3        &trans        &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &out OUT_BLE  &trans                &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_NXT     &trans
             >;
         };
 
