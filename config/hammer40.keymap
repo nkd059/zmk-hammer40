@@ -561,10 +561,10 @@
 
         Notability {
             bindings = <
-&trans     &trans                &trans                &trans                &kp LG(D)       &kp LG(X)                 &kp BACKSPACE  &trans            &trans            &kp LG(LA(NUMBER_6))  &kp LG(LA(N5))        &kp LG(LA(NUMBER_4))
-&kp LG(I)  &trans                &trans                &kp LG(LS(I))         &kp LG(C)       &kp LG(V)                 &kp PAGE_UP    &trans            &trans            &kp LG(LA(NUMBER_3))  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_1))
-&to 2      &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LEFT_ARROW  &kp RIGHT  &trans         &kp PAGE_DOWN  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &kp LG(NUMBER_3)      &kp LG(NUMBER_2)      &kp LG(NUMBER_1)
-&kp LG(N)  &kp LG(F)             &kp LG(LS(G))         &kp LG(G)             &trans          &trans     &kp LG(LA(L))  &kp LG(LA(P))  &kp LG(MINUS)     &kp LG(EQUAL)     &kp LC(N0)            &kp LG(LS(Z))         &kp LG(Z)
+&trans     &trans                &trans                &trans                &kp LG(D)       &kp LG(X)                    &kp BACKSPACE  &kp MINUS         &kp LG(EQUAL)     &kp LG(LA(NUMBER_6))  &kp LG(LA(N5))        &kp LG(LA(NUMBER_4))
+&kp LG(I)  &trans                &trans                &kp LG(LS(I))         &kp LG(C)       &kp LG(V)                    &kp PAGE_UP    &kp LEFT          &kp RIGHT         &kp LG(LA(NUMBER_3))  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_1))
+&to 2      &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LEFT_ARROW  &kp RIGHT     &trans         &kp PAGE_DOWN  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &kp LG(NUMBER_3)      &kp LG(NUMBER_2)      &kp LG(NUMBER_1)
+&kp LG(N)  &kp LG(F)             &kp LG(LS(G))         &kp LG(G)             &kp TAB         &kp LEFT_GUI  &kp LG(LA(L))  &kp LG(LA(P))  &kp LG(TAB)       &kp LG(EQUAL)     &kp LC(N0)            &kp LG(LS(Z))         &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
