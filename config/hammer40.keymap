@@ -405,10 +405,10 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp GRAVE     &kp Q         &kp W             &kp E     &kp R    &kp T                   &kp LG(LS(NUMBER_3))  &kp U          &kp C_MUTE        &kp O       &kp C_MUTE         &kp C_PREVIOUS
-&kp LEFT_GUI  &kp A         &kp S             &kp D     &kp F    &kp G                   &kp H                 &kp C_PREV     &kp C_PLAY_PAUSE  &kp C_NEXT  &kp LA(BACKSPACE)  &kp C_PLAY_PAUSE
-&to 2         &kp Z         &kp X             &kp C     &kp V    &kp B        &rot_td    &kp N                 &kp M          &kp COMMA         &kp DOT     &kp FSLH           &kp C_NEXT
-&kp LCTRL     &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LGUI  &kp ESC  &lt 1 SPACE  &lt 3 TAB  &lt 2 ENTER           &kp BACKSPACE  &kp LEFT          &kp DOWN    &kp TAB            &kp LEFT_COMMAND
+&kp GRAVE     &kp LG(LA(Q))  &kp LG(LA(W))     &kp LG(LA(E))  &kp LG(LA(R))  &kp LG(LA(T))             &kp LG(LS(NUMBER_3))  &kp U           &kp C_MUTE            &kp O                 &kp C_MUTE            &kp C_PREVIOUS
+&kp LEFT_GUI  &kp LG(LA(A))  &kp LG(LA(S))     &kp LG(LA(D))  &kp LG(LA(F))  &kp LG(LA(G))             &kp H                 &kp C_PREV      &kp C_PLAY_PAUSE      &kp C_NEXT            &kp LA(LG(NUMBER_1))  &kp C_PLAY_PAUSE
+&to 2         &kp LG(LA(Z))  &kp LG(LA(X))     &kp LG(LA(C))  &kp LG(LA(V))  &kp LG(LA(B))  &rot_td    &kp N                 &kp M           &kp COMMA             &kp C_PREVIOUS        &kp C_PLAY_PAUSE      &kp C_NEXT
+&kp LCTRL     &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LGUI       &kp ESC        &lt 1 SPACE    &lt 3 TAB  &lt 2 ENTER           &kp LG(LA(N5))  &kp LG(LA(NUMBER_4))  &kp LG(LA(NUMBER_3))  &kp LA(LG(NUMBER_2))  &kp LA(LG(NUMBER_1))
             >;
         };
 
