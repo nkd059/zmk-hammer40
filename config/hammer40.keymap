@@ -252,6 +252,135 @@
             tapping-term-ms = <250>;
             bindings = <&kp B>, <&kp RS(B)>, <&kp RA(B)>;
         };
+
+        dt_U: dt_U {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_U";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp U>, <&kp RS(U)>, <&kp RA(U)>;
+        };
+
+        dt_I: dt_I {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_I";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp I>, <&kp RS(I)>, <&kp RA(I)>;
+        };
+
+        dt_O: dt_O {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_O";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp O>, <&kp RS(O)>, <&kp RA(O)>;
+        };
+
+        dt_J: dt_J {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_J";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp J>, <&kp RS(J)>, <&kp RA(J)>;
+        };
+
+        dt_k: dt_k {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_K";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp K>, <&kp RS(K)>, <&kp RA(K)>;
+        };
+
+        dt_L: dt_L {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp L>, <&kp RS(L)>, <&kp RA(L)>;
+        };
+
+        dt_M: dt_M {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_M";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp M>, <&kp RS(M)>, <&kp RA(M)>;
+        };
+
+        dt_N: dt_N {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_N";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp N>, <&kp RS(N)>, <&kp RA(N)>;
+        };
+
+        dt_P: dt_P {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_P";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp P>, <&kp RS(P)>, <&kp RA(P)>;
+        };
+
+        dt_Semicolon: dt_Semicolon {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_SEMICOLON";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp SEMI>, <&kp RS(SEMI)>, <&kp RA(SEMI)>;
+        };
+
+        dt_comma: dt_comma {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_COMMA";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp COMMA>, <&kp RS(COMMA)>, <&kp RA(COMMA)>;
+        };
+
+        dt_period: dt_period {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_PERIOD";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp PERIOD>, <&kp RS(PERIOD)>, <&kp RA(PERIOD)>;
+        };
+
+        dt_num_1: dt_num_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_NUM_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp KP_NUMBER_1>,
+                <&kp RS(KP_NUMBER_1)>,
+                <&kp RA(KP_NUMBER_1)>;
+        };
+
+        dt_Num_2: dt_Num_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_NUM_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp KP_NUMBER_2>,
+                <&kp RS(KP_NUMBER_2)>,
+                <&kp RA(KP_NUMBER_2)>;
+        };
+
+        dt_Num_3: dt_Num_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DT_NUM_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp KP_NUMBER_3>,
+                <&kp RS(KP_NUMBER_3)>,
+                <&kp RA(KP_NUMBER_3)>;
+        };
     };
 
     macros {
@@ -490,10 +619,10 @@
 
         Mac_IE {
             bindings = <
-&dt_0                        &dt_Q                 &dt_W                   &dt_E         &dt_R         &Ipad_prodrafts          &kp Y   &kp U                             &to 2                           &kp O                         &dt_3                     &dt_4
-&dt_1                        &dt_A                 &dt_S                   &dt_D         &dt_F         &dt_G                    &kp H   &kt J                             &kp K                           &kp L                         &dt_5                     &dt_6
-&dt_2                        &dt_Z                 &dt_X                   &dt_C         &dt_V         &dt_B            &trans  &kp N   &kp M                             &kp COMMA                       &kp PERIOD                    &dt_7                     &dt_8
-&mt LS(LEFT_CONTROL) PERIOD  &kp LA(LEFT_CONTROL)  &mt LEFT_CONTROL LG(C)  &kp LEFT_ALT  &kp LEFT_GUI  &kp F1           &kp F2  &kp F3  &mt LA(LEFT_CONTROL) KP_NUMBER_4  &mt LA(LEFT_SHIFT) KP_NUMBER_3  &mt LEFT_CONTROL KP_NUMBER_2  &mt LEFT_ALT KP_NUMBER_1  &mt LEFT_COMMAND KP_N0
+&dt_0                        &dt_Q                 &dt_W                   &dt_E         &dt_R         &dt_T                 &dt_U      &dt_I                             &dt_O                           &dt_P                         &dt_Num_3                 &dt_4
+&dt_1                        &dt_A                 &dt_S                   &dt_D         &dt_F         &dt_G                 &dt_J      &dt_k                             &dt_L                           &dt_Semicolon                 &dt_5                     &dt_6
+&to 2                        &dt_Z                 &dt_X                   &dt_C         &dt_V         &dt_B      &trans     &dt_N      &dt_M                             &dt_comma                       &dt_period                    &dt_7                     &dt_8
+&mt LS(LEFT_CONTROL) PERIOD  &kp LA(LEFT_CONTROL)  &mt LEFT_CONTROL LG(C)  &kp LEFT_ALT  &kp LEFT_GUI  &dt_num_1  &dt_Num_2  &dt_Num_3  &mt LA(LEFT_CONTROL) KP_NUMBER_4  &mt LA(LEFT_SHIFT) KP_NUMBER_3  &mt LEFT_CONTROL KP_NUMBER_2  &mt LEFT_ALT KP_NUMBER_1  &mt LEFT_COMMAND KP_N0
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
