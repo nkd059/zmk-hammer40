@@ -419,7 +419,7 @@
             label = "PROCREATE_ERASER_BRUSH";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp B>, <&kp W>;
+            bindings = <&kp B>, <&kp E>;
         };
 
         Procreate_Color_layers: Procreate_Color_layers {
@@ -443,7 +443,7 @@
             label = "COPY_CUT";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LG(C)>, <&kp LG(V)>;
+            bindings = <&kp LG(C)>, <&kp LG(X)>;
         };
 
         paste_duplicate: paste_duplicate {
@@ -460,6 +460,152 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LG(S)>, <&kp LG(U)>, <&kp LG(B)>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp C>, <&kp L>;
+        };
+
+        Notability_Tool_1: Notability_Tool_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILITY_TOOL_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LG(NUMBER_1)>,
+                <&kp LG(NUMBER_2)>,
+                <&kp LG(NUMBER_3)>;
+        };
+
+        Notability_tool_2: Notability_tool_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILITY_TOOL_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(NUMBER_4)>, <&kp LG(N5)>, <&kp LG(NUMBER_6)>;
+        };
+
+        Notability_color_2: Notability_color_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILITY_COLOR_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LG(LA(NUMBER_4))>,
+                <&kp LG(LA(N5))>,
+                <&kp LG(LA(NUMBER_6))>;
+        };
+
+        Notabiltiy_color_1: Notabiltiy_color_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILTIY_COLOR_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LG(LA(NUMBER_1))>,
+                <&kp LG(LA(NUMBER_2))>,
+                <&kp LG(LA(NUMBER_3))>;
+        };
+
+        AppleBooks_Theme_1: AppleBooks_Theme_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APPLEBOOKS_THEME_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LG(LC(NUMBER_1))>,
+                <&kp LG(LC(NUMBER_2))>,
+                <&kp LG(LC(NUMBER_3))>;
+        };
+
+        AppleBooks_theme_2: AppleBooks_theme_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APPLEBOOKS_THEME_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LG(LC(NUMBER_4))>,
+                <&kp LG(LC(N5))>,
+                <&kp LG(LC(NUMBER_6))>;
+        };
+
+        AppleBooks_bookmarks_notes: AppleBooks_bookmarks_notes {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APPLEBOOKS_BOOKMARKS_NOTES";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LS(D))>, <&kp LG(LS(N))>;
+        };
+
+        AppleBooks_light_dark: AppleBooks_light_dark {
+            compatible = "zmk,behavior-tap-dance";
+            label = "APPLEBOOKS_LIGHT_DARK";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LS(LA(NUMBER_1)))>, <&kp LG(LS(LA(NUMBER_2)))>;
+        };
+
+        Notability_size: Notability_size {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILITY_SIZE";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LA(LC(NUMBER_1))>,
+                <&kp LA(LC(NUMBER_2))>,
+                <&kp LA(LC(NUMBER_3))>;
+        };
+
+        Notability_color_swtch: Notability_color_swtch {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTABILITY_COLOR_SWTCH";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LA(LG(N0))>, <&kp LA(LG(N9))>;
+        };
+
+        Noteful_pen_highlight: Noteful_pen_highlight {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTEFUL_PEN_HIGHLIGHT";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp F>, <&kp G>;
+        };
+
+        Noteful_Lasso_eraser: Noteful_Lasso_eraser {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTEFUL_LASSO_ERASER";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp A>, <&kp E>;
+        };
+
+        Noteful_color_1: Noteful_color_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTEFUL_COLOR_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp NUMBER_1>, <&kp NUMBER_2>, <&kp NUMBER_3>;
+        };
+
+        Noteful_color_2: Noteful_color_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTEFUL_COLOR_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp NUMBER_4>, <&kp N5>, <&kp NUMBER_6>;
+        };
+
+        Noteful_zoom_fit_100: Noteful_zoom_fit_100 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NOTEFUL_ZOOM_FIT_100";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(N0)>, <&kp LG(LA(N0))>;
         };
     };
 
@@ -636,7 +782,7 @@
         layer_2 {
             bindings = <
 &to 0         &to 3         &to 4         &to 5         &to 6         &to 14                      &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
-&trans        &to 15        &to 4         &to 0         &to 0         &to 0                       &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
+&trans        &to 15        &to 13        &to 0         &to 0         &to 0                       &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
 &to 2         &trans        &trans        &kp N1        &kp N2        &kp N3        &trans        &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &out OUT_BLE  &trans                &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_NXT     &trans
             >;
@@ -748,21 +894,23 @@
             >;
         };
 
-        layer_13 {
+        Apple_books {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&to 2   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC              &kp BACKSPACE  &trans  &trans  &trans                  &kp LA(LEFT_ARROW)           &kp LA(RIGHT)
+&trans  &trans  &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC              &trans         &trans  &trans  &kp LG(LC(COMMA))       &AppleBooks_theme_2          &AppleBooks_Theme_1
+&to 2   &trans  &trans  &kp K_PREV  &kp C_PLAY_PAUSE  &kp K_NEXT            &kp LG(N0)  &trans         &trans  &trans  &AppleBooks_light_dark  &AppleBooks_bookmarks_notes  &kp LG(T)
+&trans  &trans  &trans  &trans      &trans            &trans                &trans      &trans         &trans  &trans  &kp LG(Z)               &kp LEFT                     &kp RIGHT
             >;
+
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
 
         Noteful {
             bindings = <
-&kp LG(L)  &kp LG(W)  &trans  &trans  &kp LG(UP_ARROW)    &kp PAGE_UP                  &kp BACKSPACE    &kp LG(F)         &trans                &kp NUMBER_6      &kp NUMBER_5   &kp NUMBER_4
-&trans     &trans     &trans  &trans  &kp LG(DOWN_ARROW)  &kp PAGE_DOWN                &kp RIGHT_BRACE  &kp K_PLAY_PAUSE  &kp C_NEXT            &kp NUMBER_3      &kp NUMBER_2   &kp NUMBER_1
-&to 2      &trans     &trans  &trans  &trans              &trans         &trans        &kp LEFT_BRACE   &trans            &kp E                 &kp A             &kp G          &kp F
-&trans     &trans     &trans  &trans  &trans              &kp TAB        &kp LEFT_GUI  &kp LC(TAB)      &trans            &kp LG(LA(NUMBER_0))  &kp LG(NUMBER_0)  &kp LG(LS(Z))  &kp LG(Z)
+&kp LG(L)  &kp LG(W)  &trans  &trans      &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE    &kp LG(F)         &trans      &kp RIGHT_BRACE        &kp PAGE_DOWN          &kp PAGE_UP
+&trans     &trans     &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &kp RIGHT_BRACE  &kp K_PLAY_PAUSE  &kp C_NEXT  &kp LEFT_BRACE         &Noteful_color_2       &Noteful_color_1
+&to 2      &trans     &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans        &kp LG(MINUS)    &kp LG(EQUAL)     &kp E       &Noteful_zoom_fit_100  &Noteful_Lasso_eraser  &Noteful_pen_highlight
+&trans     &trans     &trans  &trans      &trans            &kp TAB               &kp LEFT_GUI  &kp LC(TAB)      &trans            &kp LG(F)   &kp LC(TAB)            &kp LG(LS(Z))          &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -770,10 +918,10 @@
 
         Notability {
             bindings = <
-&trans     &trans                &trans                &trans                &kp LG(D)       &kp LG(X)                    &kp BACKSPACE  &kp MINUS         &kp LG(EQUAL)     &kp LG(LA(NUMBER_6))  &kp LG(LA(N5))        &kp LG(LA(NUMBER_4))
-&kp LG(I)  &trans                &trans                &kp LG(LS(I))         &kp LG(C)       &kp LG(V)                    &kp PAGE_UP    &kp LEFT          &kp RIGHT         &kp LG(LA(NUMBER_3))  &kp LG(LA(NUMBER_2))  &kp LG(LA(NUMBER_1))
-&to 2      &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp LA(LC(NUMBER_3))  &kp LEFT_ARROW  &kp RIGHT     &trans         &kp PAGE_DOWN  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &kp LG(NUMBER_3)      &kp LG(NUMBER_2)      &kp LG(NUMBER_1)
-&kp LG(N)  &kp LG(F)             &kp LG(LS(G))         &kp LG(G)             &kp TAB         &kp LEFT_GUI  &kp LG(LA(L))  &kp LG(LA(P))  &kp LG(TAB)       &kp LG(EQUAL)     &kp LC(N0)            &kp LG(LS(Z))         &kp LG(Z)
+&kp LG(N)  &kp LG(LS(N))         &trans                &trans         &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                 &kp BACKSPACE  &kp LC(N0)        &kp LG(MINUS)     &kp LG(EQUAL)            &kp PG_UP            &kp PAGE_DOWN
+&kp LG(I)  &trans                &trans                &kp LG(LS(I))  &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                 &kp PAGE_UP    &kp LEFT          &kp RIGHT         &Notability_color_swtch  &Notabiltiy_color_1  &Notability_color_2
+&to 2      &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp K_PREV     &kp K_PLAY_PAUSE  &kp K_NEXT            &kp LC(N0)     &kp PAGE_DOWN  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &Notability_size         &Notability_tool_2   &Notability_Tool_1
+&kp LG(N)  &kp LG(F)             &kp LG(LS(G))         &kp LG(G)      &kp TAB           &kp LG(LA(L))         &kp LG(LA(L))  &kp LG(TAB)    &kp LG(TAB)       &kp LG(F)         &kp LG(LS(P))            &kp LG(LS(Z))        &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
