@@ -381,6 +381,86 @@
                 <&kp RS(KP_NUMBER_3)>,
                 <&kp RA(KP_NUMBER_3)>;
         };
+
+        Prodrafts_P_G: Prodrafts_P_G {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRODRAFTS_P_G";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp P>, <&kp G>;
+        };
+
+        Prodrafts_rectangles: Prodrafts_rectangles {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRODRAFTS_RECTANGLES";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp U>, <&kp R>;
+        };
+
+        Prodrafts_O_L: Prodrafts_O_L {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRODRAFTS_O_L";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp O>, <&kp L>;
+        };
+
+        Prodrafts_tape_sticker: Prodrafts_tape_sticker {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PRODRAFTS_TAPE_STICKER";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp S>, <&kp W>;
+        };
+
+        Procreate_eraser_brush: Procreate_eraser_brush {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROCREATE_ERASER_BRUSH";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp B>, <&kp W>;
+        };
+
+        Procreate_Color_layers: Procreate_Color_layers {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROCREATE_COLOR_LAYERS";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp C>, <&kp L>;
+        };
+
+        Procreate_selection_Trandform: Procreate_selection_Trandform {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROCREATE_SELECTION_TRANDFORM";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp S>, <&kp V>;
+        };
+
+        Copy_cut: Copy_cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COPY_CUT";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>;
+        };
+
+        paste_duplicate: paste_duplicate {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASTE_DUPLICATE";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(V)>, <&kp LG(J)>;
+        };
+
+        Procreate_K_U_B: Procreate_K_U_B {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PROCREATE_K_U_B";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(S)>, <&kp LG(U)>, <&kp LG(B)>;
+        };
     };
 
     macros {
@@ -564,10 +644,10 @@
 
         Procreate {
             bindings = <
-&trans  &kp LG(BACKSPACE)  &trans  &kp LG(B)  &kp LG(U)  &kp LG(K)                &kp RS(RBRC)       &kp RBRC   &kp LG(D)  &kp LG(N0)  &kp S          &kp V
-&trans  &trans             &trans  &trans     &kp LG(J)  &kp RG(X)                &kp RS(LBRC)       &kp LBRC   &trans     &kp M       &kp L          &kp C
-&to 2   &trans             &trans  &trans     &kp LG(C)  &kp LG(V)  &trans        &kp LG(SEMICOLON)  &kp LG(J)  &kp LG(X)  &kp X       &kp E          &kp B
-&trans  &trans             &trans  &trans     &trans     &kp TAB    &kp LEFT_GUI  &kp LG(TAB)        &kp LG(C)  &kp LG(V)  &kp SPACE   &kp LG(LS(Z))  &kp LG(Z)
+&trans  &kp LG(BACKSPACE)  &trans  &kp LG(B)   &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE      &kp LG(D)   &Copy_cut  &paste_duplicate                &kp LG(RIGHT_BRACE)      &kp RIGHT_BRACE
+&trans  &trans             &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &Procreate_K_U_B   &kp LG(U)   &kp LG(B)  &kp LG(SEMI)                    &kp LG(LEFT_BRACE)       &kp LEFT_BRACE
+&to 2   &trans             &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans        &kp LG(SEMICOLON)  &kp LG(J)   &kp SPACE  &Procreate_selection_Trandform  &Procreate_Color_layers  &Procreate_eraser_brush
+&trans  &trans             &trans  &trans      &trans            &kp TAB               &kp LEFT_GUI  &kp LG(TAB)        &kp LG(N0)  &kp M      &kp X                           &kp LG(LS(Z))            &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
@@ -575,10 +655,10 @@
 
         Prodrafts {
             bindings = <
-&kp ESCAPE    &kp D         &kp W         &kp E      &kp R         &Mac_indian_express          &kp BACKSPACE  &kp LG(EQUAL)      &kp LG(MINUS)      &kp W        &kp S          &kp L
-&kp NUMBER_2  &kp E         &kp H         &kp D      &kp F         &kp PAGE_DOWN                &kp LG(V)      &kt LG(C)          &kp LG(X)          &kp O        &kp U          &kp R
-&to 2         &kp Z         &kp X         &kp LG(X)  &kp LG(C)     &kp LG(V)            &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(L)    &kp G          &kp P
-&kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_4  &kp N5     &kp NUMBER_6  &kp F1               &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(TAB)  &kp LG(LS(Z))  &kp LG(Z)
+&kp ESCAPE    &kp D         &kp W         &kp E       &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC          &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)   &kp LG(EQUAL)
+&kp NUMBER_2  &kp E         &kp H         &kp D       &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC          &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_O_L  &Prodrafts_rectangles
+&to 2         &kp Z         &kp X         &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp LG(L)       &Prodrafts_P_G
+&kp LEFT_GUI  &kp NUMBER_4  &kp NUMBER_4  &kp N5      &kp NUMBER_6      &kp F1                &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(N0)               &kp LG(LS(Z))   &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
