@@ -459,7 +459,7 @@
             label = "PROCREATE_K_U_B";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp LG(S)>, <&kp LG(U)>, <&kp LG(B)>;
+            bindings = <&kp LG(K)>, <&kp LG(U)>, <&kp LG(B)>;
         };
 
         new_behavior: new_behavior {
@@ -790,10 +790,10 @@
 
         Procreate {
             bindings = <
-&trans  &kp LG(BACKSPACE)  &trans  &kp LG(B)   &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE      &kp LG(D)   &Copy_cut  &paste_duplicate                &kp LG(RIGHT_BRACE)      &kp RIGHT_BRACE
-&trans  &trans             &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &Procreate_K_U_B   &kp LG(U)   &kp LG(B)  &kp LG(SEMI)                    &kp LG(LEFT_BRACE)       &kp LEFT_BRACE
-&to 2   &trans             &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans        &kp LG(SEMICOLON)  &kp LG(J)   &kp SPACE  &Procreate_selection_Trandform  &Procreate_Color_layers  &Procreate_eraser_brush
-&trans  &trans             &trans  &trans      &trans            &kp TAB               &kp LEFT_GUI  &kp LG(TAB)        &kp LG(N0)  &kp M      &kp X                           &kp LG(LS(Z))            &kp LG(Z)
+&trans        &kp LG(BACKSPACE)  &trans  &kp LG(B)   &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE      &kp LG(D)   &Copy_cut  &paste_duplicate                &kp LG(RIGHT_BRACKET)    &kp RIGHT_BRACE
+&trans        &trans             &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &Procreate_K_U_B   &kp LG(U)   &kp LG(B)  &kp LG(SEMI)                    &kp LG(LEFT_BRACKET)     &kp LEFT_BRACE
+&to 2         &trans             &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans        &kp LG(SEMICOLON)  &kp LG(J)   &kp SPACE  &Procreate_selection_Trandform  &Procreate_Color_layers  &Procreate_eraser_brush
+&kp LEFT_GUI  &trans             &trans  &trans      &trans            &kp TAB               &kp LEFT_GUI  &kp LG(TAB)        &kp LG(N0)  &kp M      &kp X                           &kp LG(LS(Z))            &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
