@@ -790,10 +790,10 @@
 
         Procreate {
             bindings = <
-&trans        &kp LG(BACKSPACE)  &trans  &kp LG(B)   &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE      &kp LG(D)   &Copy_cut  &paste_duplicate                &kp LG(RIGHT_BRACKET)    &kp RIGHT_BRACE
-&trans        &trans             &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &Procreate_K_U_B   &kp LG(U)   &kp LG(B)  &kp LG(SEMI)                    &kp LG(LEFT_BRACKET)     &kp LEFT_BRACE
-&to 2         &trans             &trans  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans        &kp LG(SEMICOLON)  &kp LG(J)   &kp SPACE  &Procreate_selection_Trandform  &Procreate_Color_layers  &Procreate_eraser_brush
-&kp LEFT_GUI  &trans             &trans  &trans      &trans            &kp TAB               &kp LEFT_GUI  &kp LG(TAB)        &kp LG(N0)  &kp M      &kp X                           &kp LG(LS(Z))            &kp LG(Z)
+&trans        &kp LG(BACKSPACE)  &trans  &kp LG(B)       &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC                &kp BACKSPACE      &kp LG(D)   &Copy_cut  &paste_duplicate                &kp LG(RIGHT_BRACKET)    &kp RIGHT_BRACE
+&trans        &trans             &trans  &trans          &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC                &Procreate_K_U_B   &kp LG(U)   &kp LG(B)  &kp LG(SEMI)                    &kp LG(LEFT_BRACKET)     &kp LEFT_BRACE
+&to 2         &trans             &trans  &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT            &trans        &kp LG(SEMICOLON)  &kp LG(J)   &kp SPACE  &Procreate_selection_Trandform  &Procreate_Color_layers  &Procreate_eraser_brush
+&kp LEFT_GUI  &trans             &trans  &trans          &trans            &kp TAB               &kp LEFT_GUI  &kp LG(TAB)        &kp LG(N0)  &kp M      &kp X                           &kp LG(LS(Z))            &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(LEFT_BRACKET) LG(RIGHT_BRACKET)>;
@@ -801,10 +801,10 @@
 
         Prodrafts {
             bindings = <
-&kp ESCAPE    &kp D         &kp W         &kp E       &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC          &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)   &kp LG(EQUAL)
-&kp NUMBER_2  &kp E         &kp H         &kp D       &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC          &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_O_L  &Prodrafts_rectangles
-&to 2         &kp Z         &kp X         &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT            &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp LG(L)       &Prodrafts_P_G
-&kp LEFT_GUI  &kp NUMBER_4  &kp NUMBER_4  &kp N5      &kp NUMBER_6      &kp F1                &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(N0)               &kp LG(LS(Z))   &kp LG(Z)
+&kp ESCAPE    &kp D         &kp W         &kp E           &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC          &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)   &kp LG(EQUAL)
+&kp NUMBER_2  &kp E         &kp H         &kp D           &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC          &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_O_L  &Prodrafts_rectangles
+&to 2         &kp Z         &kp X         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT            &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp LG(L)       &Prodrafts_P_G
+&kp LEFT_GUI  &kp NUMBER_4  &kp NUMBER_4  &kp N5          &kp NUMBER_6      &kp F1                &kp F2  &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(N0)               &kp LG(LS(Z))   &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
@@ -898,7 +898,7 @@
             bindings = <
 &trans  &trans  &trans  &trans      &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC              &kp BACKSPACE  &trans  &trans  &trans                  &kp LA(LEFT_ARROW)           &kp LA(RIGHT)
 &trans  &trans  &trans  &trans      &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC              &trans         &trans  &trans  &kp LG(LC(COMMA))       &AppleBooks_theme_2          &AppleBooks_Theme_1
-&to 2   &trans  &trans  &kp K_PREV  &kp C_PLAY_PAUSE  &kp K_NEXT            &kp LG(N0)  &trans         &trans  &trans  &AppleBooks_light_dark  &AppleBooks_bookmarks_notes  &kp LG(T)
+&to 2   &trans  &trans  &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT            &kp LG(N0)  &trans         &trans  &trans  &AppleBooks_light_dark  &AppleBooks_bookmarks_notes  &kp LG(T)
 &trans  &trans  &trans  &trans      &trans            &trans                &trans      &trans         &trans  &trans  &kp LG(Z)               &kp LEFT                     &kp RIGHT
             >;
 
