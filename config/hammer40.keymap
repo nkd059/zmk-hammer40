@@ -695,10 +695,7 @@
             label = "CRAFT_FORW_BACK_NEW";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings =
-                <&kp LC(LEFT_BRACKET)>,
-                <&kp LG(RIGHT_BRACKET)>,
-                <&kp LG(N)>;
+            bindings = <&kp LG(LEFT_BRACKET)>, <&kp LG(RIGHT_BRACKET)>;
         };
 
         Craft_page_card: Craft_page_card {
@@ -731,6 +728,14 @@
             #binding-cells = <0>;
             tapping-term-ms = <250>;
             bindings = <&kp LG(C)>, <&kp LG(V)>, <&kp LG(X)>;
+        };
+
+        Craft_home_Close_new: Craft_home_Close_new {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_HOME_CLOSE_NEW";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(T)>, <&kp LG(W)>, <&kp LG(N)>;
         };
     };
 
@@ -948,10 +953,10 @@
 
         Crafts {
             bindings = <
-&kp DELETE   &Craft_forw_back_new  &Craft_Group_ungroup       &kp LG(MINUS)  &kp LG(EQUAL)  &Craft_focus_sidebar                     &kp ESCAPE      &kp ENTER      &Bold_italics_strikethrough  &Craft_headings_2_tripletap  &Craft_headings_1_tripletap  &kp LG(LA(UP_ARROW))
-&kp LC(TAB)  &none                 &kp LC(C_BRIGHTNESS_INC)   &none          &none          &Craft_copy_cut_paste                    &Colors_1       &Colors_2      &Craft_page_card             &Craft_List_toggle_2         &Craft_List_Toggle_1         &kp LG(LA(DOWN_ARROW))
-&to 2        &none                 &kp LC(C_BRIGHTNESS_DEC)   &kp C_PREV     &kp C_PP       &kp C_NEXT             &rot_td           &Colors_3       &Colors_4      &Craft_insert_new_Drawing    &kp LS(TAB)                  &kp UP_ARROW                 &kp TAB
-&kp LG(TAB)  &kp LEFT_GUI          &Craft_insert_new_Drawing  &kp LG(LS(Z))  &kp LG(Z)      &kp SLASH              &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LG(LS(C))  &kp LG(LS(B))                &kp LEFT                     &kp DOWN_ARROW               &kp RIGHT
+&kp DELETE   &Craft_home_Close_new  &Craft_forw_back_new       &kp LG(MINUS)  &kp LG(EQUAL)  &Craft_focus_sidebar                     &kp ESCAPE      &kp ENTER      &Bold_italics_strikethrough  &Craft_headings_2_tripletap  &Craft_headings_1_tripletap  &kp LG(LA(UP_ARROW))
+&kp LC(TAB)  &Craft_home_Close_new  &kp LC(C_BRIGHTNESS_INC)   &none          &none          &Craft_copy_cut_paste                    &Colors_1       &Colors_2      &Craft_page_card             &Craft_List_toggle_2         &Craft_List_Toggle_1         &kp LG(LA(DOWN_ARROW))
+&to 2        &none                  &kp LC(C_BRIGHTNESS_DEC)   &kp C_PREV     &kp C_PP       &kp C_NEXT             &rot_td           &Colors_3       &Colors_4      &Craft_insert_new_Drawing    &kp LS(TAB)                  &kp UP_ARROW                 &kp TAB
+&kp LG(TAB)  &kp LEFT_GUI           &Craft_insert_new_Drawing  &kp LG(LS(Z))  &kp LG(Z)      &kp SLASH              &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LG(LS(C))  &kp LG(LS(B))                &kp LEFT                     &kp DOWN_ARROW               &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
