@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
 /* Layers */
@@ -607,6 +606,132 @@
             tapping-term-ms = <250>;
             bindings = <&kp LG(N0)>, <&kp LG(LA(N0))>;
         };
+
+        Craft_headings_1_tripletap: Craft_headings_1_tripletap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_HEADINGS_1_TRIPLETAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LC(NUMBER_1)>,
+                <&kp LC(NUMBER_2)>,
+                <&kp LC(NUMBER_3)>;
+        };
+
+        Craft_headings_2_tripletap: Craft_headings_2_tripletap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_HEADINGS_2_TRIPLETAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LC(NUMBER_4)>, <&kp LC(N5)>, <&kp LC(NUMBER_6)>;
+        };
+
+        Craft_List_Toggle_1: Craft_List_Toggle_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_LIST_TOGGLE_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LA(N7))>, <&kp LA(LG(N8))>, <&kp LA(LG(N9))>;
+        };
+
+        Craft_List_toggle_2: Craft_List_toggle_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_LIST_TOGGLE_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LA(NUMBER_6))>, <&kp LA(LG(T))>;
+        };
+
+        Colors_1: Colors_1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COLORS_1";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&craft_Default_color>, <&Craft_Red>, <&Craft_Orange>;
+        };
+
+        Colors_2: Colors_2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COLORS_2";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&Craft_Red>, <&Craft_Orange>, <&Craft_pink>;
+        };
+
+        Colors_3: Colors_3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COLORS_3";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&craft_green>, <&craft_olive>, <&Craft_Orange>;
+        };
+
+        Colors_4: Colors_4 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "COLORS_4";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&craft_navy_blue>, <&craft_ocean_blue>, <&Craft_brown>;
+        };
+
+        Craft_clean_format_color: Craft_clean_format_color {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_CLEAN_FORMAT_COLOR";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LA(NUMBER_0))>, <&craft_clear_style>;
+        };
+
+        Craft_focus_sidebar: Craft_focus_sidebar {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_FOCUS_SIDEBAR";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LC(PERIOD)>, <&kp LG(BACKSLASH)>;
+        };
+
+        Craft_forw_back_new: Craft_forw_back_new {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_FORW_BACK_NEW";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings =
+                <&kp LC(LEFT_BRACKET)>,
+                <&kp LG(RIGHT_BRACKET)>,
+                <&kp LG(N)>;
+        };
+
+        Craft_page_card: Craft_page_card {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_PAGE_CARD";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(LS(P))>, <&kp LG(LS(L))>, <&kp LG(LS(APOS))>;
+        };
+
+        Bold_italics_strikethrough: Bold_italics_strikethrough {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BOLD_ITALICS_STRIKETHROUGH";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(B)>, <&kp LG(I)>, <&kp LG(LS(MINUS))>;
+        };
+
+        Craft_Group_ungroup: Craft_Group_ungroup {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_GROUP_UNGROUP";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(G)>, <&kp LG(LS(G))>;
+        };
+
+        Craft_copy_cut_paste: Craft_copy_cut_paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CRAFT_COPY_CUT_PASTE";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(C)>, <&kp LG(V)>, <&kp LG(X)>;
+        };
     };
 
     macros {
@@ -760,10 +885,10 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp GRAVE     &kp LG(LA(Q))  &kp LG(LA(W))     &kp LG(LA(E))  &kp LG(LA(R))  &kp LG(LA(T))             &kp LG(LS(NUMBER_3))  &kp U           &kp C_MUTE            &kp O                 &kp C_MUTE            &kp C_PREVIOUS
-&kp LEFT_GUI  &kp LG(LA(A))  &kp LG(LA(S))     &kp LG(LA(D))  &kp LG(LA(F))  &kp LG(LA(G))             &kp H                 &kp C_PREV      &kp C_PLAY_PAUSE      &kp C_NEXT            &kp LA(LG(NUMBER_1))  &kp C_PLAY_PAUSE
-&to 2         &kp LG(LA(Z))  &kp LG(LA(X))     &kp LG(LA(C))  &kp LG(LA(V))  &kp LG(LA(B))  &rot_td    &kp N                 &kp M           &kp COMMA             &kp C_PREVIOUS        &kp C_PLAY_PAUSE      &kp C_NEXT
-&kp LCTRL     &kp LEFT_ALT   &kp LEFT_CONTROL  &kp LGUI       &kp ESC        &lt 1 SPACE    &lt 3 TAB  &lt 2 ENTER           &kp LG(LA(N5))  &kp LG(LA(NUMBER_4))  &kp LG(LA(NUMBER_3))  &kp LA(LG(NUMBER_2))  &kp LA(LG(NUMBER_1))
+&kp LG(BACKSPACE)  &kp Q         &kp W         &kp E         &kp R         &kp T                 &kp Y      &kp U           &kp I                 &kp O       &kp P           &kp ENTER
+&kp ESCAPE         &kp A         &kp S         &kp D         &kp F         &kp G                 &kp H      &kp J           &kp K                 &kp L       &kp C_PP        &kp C_PREV
+&to 2              &kp Z         &kp X         &kp C         &kp V         &kp B      &rot_td    &kp N      &kp M           &kp COMMA             &kp PERIOD  &kp UP_ARROW    &kp C_NEXT
+&bt BT_SEL 0       &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp SPACE  &kp ENTER  &kp SPACE  &kp LG(LA(N5))  &kp LG(LA(NUMBER_4))  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
@@ -823,13 +948,13 @@
 
         Crafts {
             bindings = <
-&kp ESCAPE         &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp E      &kp LG(BACKSLASH)  &kp LC(PERIOD)               &kp BACKSPACE  &craft_image          &Craft_page_break  &kp O                      &kp LG(LS(BACKSLASH))  &kp LG(LS(APOS))
-&kp NUMBER_2       &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp D      &kp LG(LS(G))      &kp LG(G)                    &kp LG(LA(T))  &kt LG(LA(NUMBER_6))  &kp LG(LA(N9))     &kp LG(LA(N8))             &kp LG(LA(N7))         &kp LG(LA(UP_ARROW))
-&to 2              &kp LC(N5)        &kp LC(NUMBER_6)  &kp LG(X)  &kp LG(C)          &kp LG(V)       &trans       &kp LG(LS(L))  &kp LG(LS(P))         &craft_table       &kp LS(TAB)                &kp TAB                &kp LA(LG(DOWN_ARROW))
-&kp LG(LS(MINUS))  &kp LG(I)         &kp LG(B)         &kp N5     &kp LG(W)          &mo 7           &kp LC(TAB)  &kp LG(TAB)    &kp LG(LS(C))         &kp LG(LS(B))      &Craft_insert_new_Drawing  &kp LG(LS(Z))          &kp LG(Z)
+&kp DELETE   &Craft_forw_back_new  &Craft_Group_ungroup       &kp LG(MINUS)  &kp LG(EQUAL)  &Craft_focus_sidebar                     &kp ESCAPE      &kp ENTER      &Bold_italics_strikethrough  &Craft_headings_2_tripletap  &Craft_headings_1_tripletap  &kp LG(LA(UP_ARROW))
+&kp LC(TAB)  &none                 &kp LC(C_BRIGHTNESS_INC)   &none          &none          &Craft_copy_cut_paste                    &Colors_1       &Colors_2      &Craft_page_card             &Craft_List_toggle_2         &Craft_List_Toggle_1         &kp LG(LA(DOWN_ARROW))
+&to 2        &none                 &kp LC(C_BRIGHTNESS_DEC)   &kp C_PREV     &kp C_PP       &kp C_NEXT             &rot_td           &Colors_3       &Colors_4      &Craft_insert_new_Drawing    &kp LS(TAB)                  &kp UP_ARROW                 &kp TAB
+&kp LG(TAB)  &kp LEFT_GUI          &Craft_insert_new_Drawing  &kp LG(LS(Z))  &kp LG(Z)      &kp SLASH              &kp LEFT_COMMAND  &kp LEFT_SHIFT  &kp LG(LS(C))  &kp LG(LS(B))                &kp LEFT                     &kp DOWN_ARROW               &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
         };
 
         Crafts_2 {
