@@ -737,6 +737,22 @@
             tapping-term-ms = <250>;
             bindings = <&kp LG(T)>, <&kp LG(W)>, <&kp LG(N)>;
         };
+
+        MN_View_Vertical_Horizontal: MN_View_Vertical_Horizontal {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MN_VIEW_VERTICAL_HORIZONTAL";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LA(O)>, <&kp LA(P)>;
+        };
+
+        MN_TOC_Thumbnails: MN_TOC_Thumbnails {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MN_TOC_THUMBNAILS";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp LG(D)>, <&kp LG(LS(G))>;
+        };
     };
 
     macros {
@@ -912,7 +928,7 @@
         layer_2 {
             bindings = <
 &to 0         &to 3         &to 4         &to 5         &to 6         &to 14                      &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
-&trans        &to 15        &to 13        &to 0         &to 0         &to 0                       &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
+&trans        &to 15        &to 13        &to 0         &to 0         &to 16                      &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
 &to 2         &trans        &trans        &kp N1        &kp N2        &kp N3        &trans        &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_TOG  &out OUT_BLE  &trans                &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_NXT     &trans
             >;
@@ -1055,6 +1071,17 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
+        };
+
+        MarginNote {
+            bindings = <
+&kp LG(BACKSPACE)  &trans  &trans          &trans          &trans                &kp LG(BACKSPACE)             &kp LG(Z)      &kp LG(LS(Z))  &trans                &trans                &trans                &MN_View_Vertical_Horizontal
+&trans             &trans  &kp LC(LA(T))   &kp LC(LA(Q))   &kp LC(LA(N0))        &kp LC(LA(N9))                &kp LA(LC(R))  &kp LC(LA(Y))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_1))
+&to 2              &trans  &kp LC(LA(N8))  &kp LC(LA(N7))  &kp LC(LA(NUMBER_6))  &kp LA(LC(NUMBER_5))  &trans  &kp LC(N9)     &kp LC(N0)     &kp LC(NUMBER_4)      &kp LC(NUMBER_3)      &kp LC(NUMBER_2)      &kp LC(NUMBER_1)
+&kp LEFT_GUI       &trans  &trans          &trans          &trans                &kp LG(LC(S))         &trans  &kp LG(TAB)    &kp LG(LS(R))  &kp LG(LS(G))         &kp LG(D)             &kp LEFT              &kp RIGHT
+            >;
+
+            sensor-bindings = <&inc_dec_kp EQUAL MINUS>;
         };
     };
 };
