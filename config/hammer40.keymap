@@ -916,7 +916,7 @@
             display-name = "nav";
             bindings = <
 &kp LG(TAB)   &kp LG(LA(DOWN))  &trans  &trans  &kp LG(LA(UP_ARROW))  &trans          &kp EXCL          &kp AT             &kp HASH       &kp DOLLAR            &kp PERCENT            &kp COLON
-&kp LC(DOWN)  &trans            &kp B   &trans  &trans                &trans          &kp CARET         &kp AMPS           &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
+&kp LC(DOWN)  &trans            &kp A   &trans  &trans                &trans          &kp CARET         &kp AMPS           &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
 &to 2         &trans            &trans  &trans  &trans                &trans  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp PIPE
 &trans        &trans            &trans  &trans  &trans                &trans  &trans  &kp LA(SPACE)     &trans             &trans         &trans                &trans                 &trans
             >;
