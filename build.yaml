@@ -13,19 +13,28 @@
 #
 ---
 # board: [seeeduino_xiao, seeeduino_xiao_ble, seeeduino_xiao_rp2040]
-board: [seeeduino_xiao_ble]
+# board: [seeeduino_xiao_ble]
+board: [xiao_ble//zmk]
 shield:
   - hammer40
   # - hana_central_dongle
   # - hana_central_left
   # - hana_peripheral_left
   # - hana_peripheral_right
-include:
-  - board: seeeduino_xiao_ble
+  include:
+  - board: xiao_ble//zmk
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+
+  - board: xiao_ble//zmk
     shield: hammer40 rgbled_adapter
+    
+# include:
+#  - board: seeeduino_xiao_ble
+#    shield: settings_reset
+#  - board: seeeduino_xiao_ble
+#    shield: hammer40 rgbled_adapter
 #   - board: seeeduino_xiao_ble
+
 #     shield: hana_left
 #   - board: seeeduino_xiao_ble
 #     shield: hana_right
