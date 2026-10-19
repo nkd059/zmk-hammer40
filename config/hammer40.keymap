@@ -380,28 +380,28 @@
                 <&kp RA(KP_NUMBER_3)>;
         };
 
-        Prodrafts_P_G: Prodrafts_P_G {
+        Prodrafts_100cent_Immersive: Prodrafts_100cent_Immersive {
             compatible = "zmk,behavior-tap-dance";
-            label = "PRODRAFTS_P_G";
+            label = "PRODRAFTS_100CENT_IMMERSIVE";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp P>, <&kp G>;
+            bindings = <&kp LG(NUMBER_1)>, <&kp LG(LS(F))>;
         };
 
-        Prodrafts_rectangles: Prodrafts_rectangles {
+        Prodrafts_rectangle_Artboard: Prodrafts_rectangle_Artboard {
             compatible = "zmk,behavior-tap-dance";
-            label = "PRODRAFTS_RECTANGLES";
+            label = "PRODRAFTS_RECTANGLE_ARTBOARD";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp U>, <&kp R>;
+            bindings = <&kp R>, <&kp G>;
         };
 
-        Prodrafts_O_L: Prodrafts_O_L {
+        Prodrafts_Lasso_backspace: Prodrafts_Lasso_backspace {
             compatible = "zmk,behavior-tap-dance";
-            label = "PRODRAFTS_O_L";
+            label = "PRODRAFTS_LASSO_BACKSPACE";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp O>, <&kp L>;
+            bindings = <&kp V>, <&kp BACKSPACE>;
         };
 
         Prodrafts_tape_sticker: Prodrafts_tape_sticker {
@@ -417,7 +417,7 @@
             label = "PROCREATE_ERASER_BRUSH";
             #binding-cells = <0>;
             tapping-term-ms = <250>;
-            bindings = <&kp B>, <&kp E>;
+            bindings = <&kp NUMBER_1>, <&kp E>;
         };
 
         Procreate_Color_layers: Procreate_Color_layers {
@@ -948,10 +948,10 @@
 
         Prodrafts {
             bindings = <
-&kp ESCAPE    &kp D         &kp W         &kp E           &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC          &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)   &kp LG(EQUAL)
-&kp NUMBER_2  &kp E         &kp H         &kp D           &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC          &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_O_L  &Prodrafts_rectangles
-&to 2         &kp Z         &kp X         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT            &trans  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp LG(L)       &Prodrafts_P_G
-&kp LEFT_GUI  &kp NUMBER_4  &kp NUMBER_4  &kp N5          &kp NUMBER_6      &kp F1                &to 2   &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LG(N0)               &kp LG(LS(Z))   &kp LG(Z)
+&Procreate_eraser_brush       &kp NUMBER_2                   &kp NUMBER_4  &kp NUMBER_6  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                    &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)               &kp LG(EQUAL)
+&Prodrafts_Lasso_backspace    &kp NUMBER_3                   &kp N5        &kp N7        &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC                    &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_Lasso_backspace  &Prodrafts_rectangle_Artboard
+&Prodrafts_100cent_Immersive  &Prodrafts_rectangle_Artboard  &kp F         &kp T         &kp L            &kp T                 &kp LG(NUMBER_1)  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp UP_ARROW                &Prodrafts_100cent_Immersive
+&kp LG(Z)                     &kp LG(LS(Z))                  &kp LG(TAB)   &kp N5        &kp NUMBER_6     &kp LG(N0)            &to 2             &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LEFT                 &kp DOWN_ARROW              &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
