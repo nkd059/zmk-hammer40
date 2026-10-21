@@ -752,6 +752,13 @@
             tapping-term-ms = <250>;
             bindings = <&kp LG(D)>, <&kp LG(LS(G))>;
         };
+
+        Music_PlayNextPrevious: Music_PlayNextPrevious {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MUSIC_PLAYNEXTPREVIOUS";
+            #binding-cells = <0>;
+            bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREV>;
+        };
     };
 
     macros {
@@ -905,20 +912,20 @@
             display-name = "base";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
-&kp ESCAPE  &kp Q     &kp W     &kp E      &kp R  &kp T               &kp Y      &kp U     &kp I      &kp O       &kp P           &kp BACKSPACE
-&kp TAB     &kp A     &kp S     &kp D      &kp F  &kp G               &kp H      &kp J     &kp K      &kp L       &kp C_PP        &kp ENTER
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V  &kp B      &rot_td  &kp N      &kp M     &kp COMMA  &kp PERIOD  &kp UP_ARROW    &kp RSHFT
-&kp LCTRL   &kp LALT  &kp LCMD  &kp GLOBE  &mo 1  &kp SPACE  &to 2    &kp SPACE  &kp RGUI  &kp RCTRL  &kp LEFT    &kp DOWN_ARROW  &kp RIGHT
+&kp ESCAPE  &kp Q     &kp W     &kp E      &kp R  &kp T               &kp Y      &kp U     &kp I      &kp O       &kp P                    &kp BACKSPACE
+&kp TAB     &kp A     &kp S     &kp D      &kp F  &kp G               &kp H      &kp J     &kp K      &kp L       &Music_PlayNextPrevious  &kp ENTER
+&kp LSHFT   &kp Z     &kp X     &kp C      &kp V  &kp B      &rot_td  &kp N      &kp M     &kp COMMA  &kp PERIOD  &kp UP_ARROW             &kp RSHFT
+&kp LCTRL   &kp LALT  &kp LCMD  &kp GLOBE  &to 1  &kp SPACE  &to 2    &kp SPACE  &kp RGUI  &kp RCTRL  &kp LEFT    &kp DOWN_ARROW           &kp RIGHT
             >;
         };
 
         nav_layer {
             display-name = "nav";
             bindings = <
-&kp LG(TAB)   &kp LG(LA(DOWN))  &trans  &kp N7        &kp N8        &kp N9                &kp EXCL          &kp AT             &kp HASH       &kp DOLLAR            &kp PERCENT            &kp COLON
-&kp LC(DOWN)  &trans            &kp A   &kp NUMBER_4  &kp N5        &kp NUMBER_6          &kp CARET         &kp AMPS           &kp ASTRK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON
-&to 2         &trans            &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN  &kp GREATER_THAN      &kp QUESTION           &kp PIPE
-&trans        &trans            &trans  &trans        &trans        &trans        &trans  &kp LA(SPACE)     &trans             &trans         &trans                &trans                 &trans
+&to 0             &kp LG(LA(DOWN))  &trans  &kp N7        &kp N8        &kp N9                &kp DELETE     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp N7        &kp N8        &kp N9
+&kp LC(CAPSLOCK)  &trans            &kp A   &kp NUMBER_4  &kp N5        &kp NUMBER_6          &kp PAGE_UP    &kp SEMI          &kp APOSTROPHE     &kp NUMBER_4  &kp N5        &kp NUMBER_6
+&kp LEFT_SHIFT    &trans            &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &kp PAGE_DOWN  &kp PERIOD        &kp QUESTION       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3
+&trans            &trans            &trans  &trans        &kp DOT       &kp N0        &to 2   &kp LA(SPACE)  &kp PAGE_UP       &kp PAGE_DOWN      &kp N0        &kp KP_DOT    &kp ENTER
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -926,10 +933,10 @@
 
         layer_2 {
             bindings = <
-&to 0         &to 3         &to 4         &to 5         &to 6         &to 14                             &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
-&trans        &to 15        &to 13        &to 0         &to 0         &to 16                             &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
+&to 3         &to 4         &to 13        &to 5         &to 6         &to 16                             &to 8                 &to 9         &to 10              &to 11         &to 12         &to 13
+&to 14        &to 16        &to 13        &to 0         &to 0         &to 16                             &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
 &to 2         &trans        &trans        &kp N1        &kp N2        &kp N3      &kp C_BRIGHTNESS_AUTO  &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_PRV  &to 2                  &bt BT_NXT            &bt BT_CLR    &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_CLR     &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_PRV  &to 2                  &bt BT_NXT            &bt BT_SEL 4  &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_CLR     &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -1065,10 +1072,10 @@
 
         Notability {
             bindings = <
-&kp LG(N)  &kp LG(LS(N))         &trans                &trans         &kp C_VOLUME_UP   &kp C_BRIGHTNESS_INC              &kp BACKSPACE  &kp LC(N0)        &kp LG(MINUS)     &kp LG(EQUAL)            &kp PG_UP            &kp PAGE_DOWN
-&kp LG(I)  &trans                &trans                &kp LG(LS(I))  &kp C_VOL_DN      &kp C_BRIGHTNESS_DEC              &kp PAGE_UP    &kp LEFT          &kp RIGHT         &Notability_color_swtch  &Notabiltiy_color_1  &Notability_color_2
-&to 2      &kp LA(LC(NUMBER_1))  &kp LA(LC(NUMBER_2))  &kp K_PREV     &kp K_PLAY_PAUSE  &kp K_NEXT            &kp LC(N0)  &kp PAGE_DOWN  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &Notability_size         &Notability_tool_2   &Notability_Tool_1
-&kp LG(N)  &kp LG(F)             &kp LG(LS(G))         &kp LG(G)      &kp TAB           &kp LG(LA(L))         &to 2       &kp LG(TAB)    &kp LG(TAB)       &kp LG(F)         &kp LG(LS(P))            &kp LG(LS(Z))        &kp LG(Z)
+&kp LG(NUMBER_1)  &kp LG(NUMBER_4)  &kp LG(LA(NUMBER_1))  &kp LG(LA(NUMBER_4))  &kp LG(LS(F))         &kp LG(LA(P))              &kp BACKSPACE  &kp LC(N0)        &kp LG(MINUS)     &kp LG(C)                &kp LG(X)            &kp LG(V)
+&kp LG(NUMBER_2)  &kp LG(N5)        &kp LG(LA(NUMBER_2))  &kp LG(LA(N5))        &kp C_BRI_UP          &kp LG(PLUS)               &kp PAGE_UP    &kp LEFT          &kp RIGHT         &Notability_color_swtch  &Notabiltiy_color_1  &Notability_color_2
+&kp LG(NUMBER_3)  &kp LG(NUMBER_6)  &kp LA(LG(NUMBER_3))  &kp LG(LA(NUMBER_6))  &kp C_BRIGHTNESS_DEC  &kp LG(MINUS)  &kp LG(N0)  &kp LG(LA(N))  &kp LG(NUMBER_5)  &kp LG(NUMBER_4)  &Notability_size         &Notability_tool_2   &Notability_Tool_1
+&kp LG(Z)         &kp LG(LS(Z))     &kp LEFT_ARROW        &kp RIGHT             &kp LC(TAB)           &kp LG(TAB)    &to 2       &kp LG(TAB)    &kp LG(TAB)       &kp LG(F)         &kp LG(LS(P))            &kp LG(LS(Z))        &kp LG(Z)
             >;
 
             sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
@@ -1076,13 +1083,13 @@
 
         MarginNote {
             bindings = <
-&kp LG(BACKSPACE)  &trans  &trans          &trans          &trans                &kp LG(BACKSPACE)             &kp LG(Z)      &kp LG(LS(Z))  &trans                &trans                &trans                &MN_View_Vertical_Horizontal
-&trans             &trans  &kp LC(LA(T))   &kp LC(LA(Q))   &kp LC(LA(N0))        &kp LC(LA(N9))                &kp LA(LC(R))  &kp LC(LA(Y))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_1))
-&to 2              &trans  &kp LC(LA(N8))  &kp LC(LA(N7))  &kp LC(LA(NUMBER_6))  &kp LA(LC(NUMBER_5))  &trans  &kp LC(N9)     &kp LC(N0)     &kp LC(NUMBER_4)      &kp LC(NUMBER_3)      &kp LC(NUMBER_2)      &kp LC(NUMBER_1)
-&kp F              &kp E   &trans          &trans          &trans                &kp LG(LC(S))         &to 2   &kp LG(TAB)    &kp LG(LS(R))  &kp LG(LS(G))         &kp LG(D)             &kp LEFT              &kp RIGHT
+&kp LC(N9)        &kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LG(BACKSPACE)          &kp LA(NUMBER_0)  &kp LA(P)      &trans                &trans                &trans                &MN_View_Vertical_Horizontal
+&kp LA(NUMBER_1)  &kp LA(NUMBER_2)  &kp LA(LG(I))     &kp LG(D)         &kp LG(LC(S))     &kp LG(LC(K))              &kp LA(LC(R))     &kp LC(LA(Y))  &kp LC(LA(NUMBER_4))  &kp LC(LA(NUMBER_3))  &kp LC(LA(NUMBER_2))  &kp LA(LC(NUMBER_1))
+&kp LA(N5)        &kp LS(E)         &kp LG(N0)        &kp LG(G)         &kp LC(LG(R))     &kp LS(M)          &trans  &kp LC(N9)        &kp LC(N0)     &kp LC(NUMBER_4)      &kp LC(NUMBER_3)      &kp LC(NUMBER_2)      &kp LC(NUMBER_1)
+&kp LEFT          &kp RIGHT         &kp LG(Z)         &kp LG(LS(Z))     &kp LS(D)         &kp LG(TAB)        &to 2   &kp LC(TAB)       &kp LG(LS(R))  &kp LG(LS(G))         &kp LG(D)             &kp LEFT              &kp RIGHT
             >;
 
-            sensor-bindings = <&inc_dec_kp EQUAL MINUS>;
+            sensor-bindings = <&inc_dec_kp LG(EQUAL) LG(MINUS)>;
         };
     };
 };
