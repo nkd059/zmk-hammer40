@@ -936,7 +936,7 @@
 &to 3         &to 4         &to 5         &to 13        &to 14        &to 15                             &to 9                 &to 5         &to 10              &to 11         &to 12         &to 13
 &to 16        &to 16        &to 13        &to 0         &to 0         &to 16                             &kp LEFT_BRACE        &kp LEFT      &kp DOWN            &kp UP         &kp RIGHT      &kp NUMBER_1
 &to 2         &trans        &trans        &to 6         &to 7         &to 8       &kp C_BRIGHTNESS_AUTO  &kp LEFT_PARENTHESIS  &kp LG(LEFT)  &kp LA(LEFT_ARROW)  &kp LA(RIGHT)  &kp LG(RIGHT)  &kp RIGHT_PARENTHESIS
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_PRV  &to 2                  &bt BT_NXT            &bt BT_SEL 4  &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_CLR     &bt BT_CLR_ALL
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_PRV  &to 0                  &bt BT_NXT            &bt BT_SEL 4  &bt BT_CLR_ALL      &bt BT_PRV     &bt BT_CLR     &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
