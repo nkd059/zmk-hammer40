@@ -957,8 +957,8 @@
             bindings = <
 &Procreate_eraser_brush       &kp NUMBER_2                   &kp NUMBER_4  &kp NUMBER_6  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_INC                    &kp BACKSPACE  &kp LG(EQUAL)      &Copy_cut          &paste_duplicate         &kp LG(MINUS)               &kp LG(EQUAL)
 &Prodrafts_Lasso_backspace    &kp NUMBER_3                   &kp N5        &kp N7        &kp C_VOL_DN     &kp C_BRIGHTNESS_DEC                    &kp LG(V)      &kt LG(C)          &kp LG(X)          &Prodrafts_tape_sticker  &Prodrafts_Lasso_backspace  &Prodrafts_rectangle_Artboard
-&Prodrafts_100cent_Immersive  &Prodrafts_rectangle_Artboard  &kp F         &kp T         &kp L            &kp T                 &kp LG(NUMBER_1)  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp UP_ARROW                &Prodrafts_100cent_Immersive
-&kp LG(Z)                     &kp LG(LS(Z))                  &kp LG(TAB)   &kp N5        &kp NUMBER_6     &kp LG(N0)            &to 2             &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LEFT                 &kp DOWN_ARROW              &kp RIGHT
+&Prodrafts_100cent_Immersive  &Prodrafts_rectangle_Artboard  &kp X         &kp F         &kp L            &kp T                 &kp LG(NUMBER_1)  &kp X          &kp LG(ENTER)      &kp LG(LS(ENTER))  &kp LG(BACKSPACE)        &kp UP_ARROW                &Prodrafts_100cent_Immersive
+&kp LG(Z)                     &kp LG(LS(Z))                  &kp LG(TAB)   &kp LG(N0)    &kp NUMBER_6     &kp LG(N0)            &to 2             &kp LG(TAB)    &kp LG(BACKSPACE)  &kp LG(N0)         &kp LEFT                 &kp DOWN_ARROW              &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
@@ -966,8 +966,8 @@
 
         ProDrafts2 {
             bindings = <
-&Prodrafts_100cent_Immersive   &kp NUMBER_3  &kp NUMBER_2  &kp LG(Z)      &kp R                 &kp T                         &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
-&Prodrafts_rectangle_Artboard  &kp N5        &kp NUMBER_4  &kp LG(LS(Z))  &kp F                 &kp C_VOLUME_UP               &kp H   &kt J   &kp K      &kp L       &kp SEMICOLON  &kp RIGHT_BRACKET
+&Prodrafts_100cent_Immersive   &kp NUMBER_3  &kp NUMBER_2  &kp LG(Z)      &kp X                 &kp F                         &kp Y   &kp U   &kp I      &kp O       &kp P          &kp LEFT_BRACKET
+&Prodrafts_rectangle_Artboard  &kp N5        &kp NUMBER_4  &kp LG(LS(Z))  &kp H                 &kp H                         &kp H   &kt J   &kp K      &kp L       &kp SEMICOLON  &kp RIGHT_BRACKET
 &Prodrafts_Lasso_backspace     &kp N7        &kp NUMBER_6  &kp C          &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &trans  &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp APOS       &kp SLASH
 &Procreate_eraser_brush        &kp LG(N0)    &kp LG(TAB)   &kp N5         &kp NUMBER_6          &kp F1                &to 2   &kp F3  &kp N7  &kp N8     &kp N9      &kp N0         &kp RIGHT_SHIFT
             >;
